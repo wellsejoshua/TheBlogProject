@@ -89,7 +89,7 @@ namespace TheBlogProject.Services
         UserName = "wellsejoshua@gmail.com",
         FirstName = "modJosh",
         LastName = "modWells",
-        PhoneNumber = "(221) 217-1876",
+        PhoneNumber = "(222) 217-1876",
         EmailConfirmed = true,
       };
 
