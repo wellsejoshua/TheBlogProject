@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,6 +29,8 @@ namespace TheBlogProject.Services
 
     public async Task ManageDataAsync()
     {
+      //Task: Create the DB from Migrations
+      await _dbContext.Database.MigrateAsync();
       //this public method is going to be used to call other methods that are private in the class ...it is a wrapper method
       //task 1 seed a few roles into the system
       await SeedRolesAsync();
