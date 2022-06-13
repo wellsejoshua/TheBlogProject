@@ -20,6 +20,8 @@ namespace TheBlogProject.Models
     [Display(Name = "Last Name")]
     public string LastName { get; set; }
 
+
+
     public byte[] ImageData { get; set; }
     public string ContentType { get; set; }
 
